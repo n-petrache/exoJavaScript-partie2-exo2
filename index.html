@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 2</title>
+</head>
+<body>
+  <form>
+    <label for="nom">Votre nom  : </label><input type="text" name="nom" value="" id="nom"/>
+  </form>
+  <script>
+    var nom = document.getElementById("nom");
+    /* Dès que le champ de saisie du text n'est plus sélectionné
+    le message "Merci de votre participation" s'affiche dans
+    une boite de dialogue */
+    nom.addEventListener("blur", function(){
+      alert("Merci de votre participation");
+    });
+  </script>
+</body>
+</html>
